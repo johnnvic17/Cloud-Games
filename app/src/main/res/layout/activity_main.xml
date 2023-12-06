@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blackMind2">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/lightBlue"
+        app:tabSelectedTextColor="@color/whiteFont"
+        android:background="@color/blackMind2"
+        app:layout_constraintTop_toBottomOf="@id/iv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catálogo de jogos"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar jogos"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_viewpg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tabLay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cv_menu_bar"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:cardBackgroundColor="@color/dracula"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="22dp"
+                android:src="@drawable/homeicon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_img_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Início"
+                android:textSize="12sp"
+                android:layout_marginStart="49dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/whiteFont"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/img_planos"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/planos"
+                android:layout_marginStart="52dp"
+                android:layout_marginBottom="21dp"
+                app:layout_constraintStart_toEndOf="@id/img_home"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_img_planos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Planos"
+                android:textSize="12sp"
+                android:textColor="@color/whiteFont"
+                android:layout_marginStart="123dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/img_jogos"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/jogos"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="19dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/img_profile"/>
+
+            <TextView
+                android:id="@+id/tv_img_jogos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jogar"
+                android:textSize="12sp"
+                android:textColor="@color/whiteFont"
+                android:layout_marginEnd="125dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/profileicon"
+                android:layout_marginBottom="21dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_img_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textSize="12sp"
+                android:textColor="@color/whiteFont"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

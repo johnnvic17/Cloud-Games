@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GamerFlix" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blackMind2</item>
+        <item name="colorPrimaryVariant">@color/blackMind2</item>
+    </style>
+
+    <style name="Theme.GamerFlix" parent="Base.Theme.GamerFlix" />
+</resources>

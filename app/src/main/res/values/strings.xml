@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Gamer Flix</string>
+    <string name="title">GamerFlix</string>
+    <string name="desc">Bem-vindo à revolução dos jogos, apresentamos o CloudGames, a <font color="#15AAFF">plataforma de jogos em nuvem</font> que leva a experiência de jogo a um patamar superior. Abaixo veja os principais <font color="#15AAFF">jogos em destaque do nosso catálogo</font>: </string>
+    <string name="desc_compra_separadamente">Ou se preferir, <font color="#15AAFF">compre os jogos separadamente</font> e tenha acesso vitalício a seus jogos.</string>
+</resources>
